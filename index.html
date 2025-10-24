@@ -252,31 +252,41 @@
           </div>
           
         </div>
-        <form class="card" method="post" action="https://formsubmit.co/contact@spunaises.fr">
-          <label>Nom<br/><input required name="name" style="width:100%;padding:12px;border-radius:12px;border:1px solid #243468;background:#0b122b;color:#e9eef7"/></label><br/><br/>
-          <label>Téléphone / Email<br/><input required name="contact" style="width:100%;padding:12px;border-radius:12px;border:1px solid #243468;background:#0b122b;color:#e9eef7"/></label><br/><br/>
-          <label>Type de nuisible concerné<br/>
-            <select name="nuisible" required style="width:100%;padding:12px;border-radius:12px;border:1px solid #243468;background:#0b122b;color:#e9eef7">
-              <option value="" disabled selected>Choisir…</option>
-              <option value="punaises">Punaises de lit</option>
-              <option value="cafards">Cafards</option>
-              <option value="rats_souris">Rats et souris</option>
-              <option value="autres">Autres nuisibles</option>
-            </select>
-          </label><br/><br/>
-          <label>Adresse postale<br/>
-            <input name="address" placeholder="Numéro, rue, code postal, ville" required style="width:100%;padding:12px;border-radius:12px;border:1px solid #243468;background:#0b122b;color:#e9eef7"/>
-          </label><br/><br/>
-          
-          <label>Message<br/>
-            <textarea name="message" rows="5" placeholder="Précisions utiles (étage, accès, meilleure disponibilité)…" style="width:100%;padding:12px;border-radius:12px;border:1px solid #243468;background:#0b122b;color:#e9eef7"></textarea>
-          </label><br/>
-          <input type="hidden" name="_next" value="/merci.html" />
-          <input type="hidden" name="_subject" value="Nouveau devis — Spunaises" />
-          <input type="hidden" name="_captcha" value="false" />
-          <button class="btn btn-primary" type="submit">Envoyer</button>
-          <p class="note">En cliquant “Envoyer”, vous acceptez d’être recontacté par Spunaises.</p>
-        </form>
+<form action="https://formsubmit.co/contact@spunaises.fr" method="POST" accept-charset="UTF-8">
+  <label>Nom
+    <input name="name" required placeholder="Votre nom">
+  </label>
+  <label>Email
+    <input type="email" name="email" required placeholder="email@domaine.fr">
+  </label>
+  <label>Téléphone
+    <input name="phone" placeholder="07…">
+  </label>
+  <label>Type de nuisible concerné
+    <select name="nuisible" required>
+      <option value="" disabled selected>Choisir…</option>
+      <option value="punaises">Punaises de lit</option>
+      <option value="cafards">Cafards</option>
+      <option value="rats_souris">Rats et souris</option>
+      <option value="autres">Autres nuisibles</option>
+    </select>
+  </label>
+  <label>Adresse postale
+    <input name="address" required placeholder="Numéro, rue, code postal, ville">
+  </label>
+  <label>Message
+    <textarea name="message" rows="5" placeholder="Précisions utiles (étage, accès, disponibilité)…"></textarea>
+  </label>
+
+  <!-- Champs cachés FormSubmit -->
+  <input type="hidden" name="_next" value="merci.html">
+  <input type="hidden" name="_subject" value="Nouveau devis — Spunaises">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_replyto" value="{{email}}">
+  <input type="text"   name="_honey"  style="display:none">
+
+  <button type="submit">Envoyer</button>
+</form>
       </div>
     </section>
   </main>
