@@ -4,16 +4,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Merci — Spunaises</title>
-  <meta name="description" content="Votre demande a bien été envoyée à Spunaises. Nous vous rappelons sous peu pour confirmer un créneau d’intervention." />
+  <meta name="description" content="Votre demande a bien été envoyée à Spunaises. Nous vous rappelons sous 24 h pour confirmer le créneau d’intervention." />
+  <style>
+    :root{--bg:#0b1020;--muted:#131a33;--card:#0f1630;--pri:#5ee0aa;--text:#e9eef7;--sub:#a7b2c8}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0b1428 40%,#0a0e1a);color:#e9eef7;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif}
+    .wrap{min-height:100svh;display:grid;place-items:center;padding:24px}
+    .card{max-width:680px;background:linear-gradient(180deg,#0f1734,#0c142b);border:1px solid #1f2a54;border-radius:18px;padding:24px}
+    h1{margin:0 0 10px;font-size:clamp(22px,4vw,32px)}
+    p{color:#a7b2c8}
+    .btn{display:inline-block;padding:14px 20px;border-radius:14px;font-weight:700;background:linear-gradient(90deg,var(--pri),#7cf5c3);color:#052013;text-decoration:none}
+    .tips{margin-top:14px;display:grid;gap:8px}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--pri);box-shadow:0 0 0 3px rgba(94,224,170,.16);display:inline-block;margin-right:8px}
+  </style>
 </head>
 <body>
-  <main class="container" style="min-height:100svh;display:grid;place-items:center">
-    <section class="card" style="max-width:720px;padding:24px">
-      <h1>Merci, votre demande a bien été envoyée ✅</h1>
-      <p>Un technicien vous contactera <strong>sous 24&nbsp;h</strong> pour confirmer votre devis et proposer un créneau d’intervention.</p>
-      <p>Pour les <strong>punaises de lit</strong>, prévoir en général <strong>4 h d’absence</strong> le jour du traitement. Aérez 20–30 min avant ré-entrée.</p>
-      <p style="margin-top:14px"><a class="btn btn-primary" href="./">Retour à l’accueil</a></p>
-      <p class="muted" style="margin-top:6px">Besoin d’aide rapide ? 07 56 84 80 96 • contact@spunaises.fr</p>
+  <main class="wrap">
+    <section class="card" aria-labelledby="t">
+      <h1 id="t">Merci, votre demande a bien été envoyée ✅</h1>
+      <p>Un technicien vous contactera <strong>sous 24&nbsp;h</strong> (8h–20h) pour confirmer votre devis et proposer un créneau d’intervention.</p>
+
+      <div class="tips">
+        <div><span class="dot"></span><strong>Punaises de lit</strong> : prévoyez <strong>4 h d’absence</strong> le jour du traitement.</div>
+        <div><span class="dot"></span>Pensez au <strong>linge 60&nbsp;°C</strong> et à aérer <strong>20–30&nbsp;min</strong> avant ré-entrée.</div>
+      </div>
+
+      <p style="margin-top:14px"><a class="btn" href="./">Retour à l’accueil</a></p>
+      <p style="margin-top:8px">Besoin urgent ? 07&nbsp;56&nbsp;84&nbsp;80&nbsp;96 • contact@spunaises.fr</p>
     </section>
   </main>
 </body>
