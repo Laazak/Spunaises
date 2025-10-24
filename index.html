@@ -4,95 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Spunaises — Désinsectisation & Dératisation Marseille | Dès 80€</title>
-  <meta name="description" content="Spunaises, Scafards (cafards) et Sratus (dératisation) à Marseille & Aix. Interventions discrètes, réactives et à petit prix — à partir de 80€ TTC." />
+  <meta name="description" content="Spunaises, Scafards (cafards) et Sratus (dératisation) à Marseille & Aix. Interventions discrètes, rapides et efficaces — dès 80€ TTC. Obtenez un devis immédiat." />
 
-  <!-- Favicon & canonical -->
+  <!-- Favicon & Canonical (garde tes fichiers existants) -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/spunaises-favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="64x64" href="assets/spunaises-favicon-64.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/spunaises-favicon-96.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="canonical" href="https://spunaises.fr/" />
 
-  <!-- Open Graph (aperçu partage) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Spunaises — Désinsectisation & Dératisation Marseille | Dès 80€" />
-  <meta property="og:description" content="3 services certifiés : Spunaises (punaises de lit), Scafards (cafards), Sratus (rats). Suivi J+15. Intervention discrète." />
+  <meta property="og:description" content="3 services : Spunaises (punaises de lit), Scafards (cafards), Sratus (rats). Suivi J+15. Intervention discrète." />
   <meta property="og:image" content="assets/spunaises-logo-512.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <style>
-    :root{--bg:#0b1020;--muted:#131a33;--card:#0f1630;--pri:#5ee0aa;--text:#e9eef7;--sub:#a7b2c8}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0b1428 40%,#0a0e1a);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1120px;margin:0 auto;padding:0 20px}
-    .btn{display:inline-block;padding:12px 16px;border-radius:12px;font-weight:700}
-    .btn-primary{background:linear-gradient(90deg,var(--pri),#7cf5c3);color:#052013;box-shadow:0 10px 24px rgba(94,224,170,.25)}
-    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(10px);background:rgba(10,15,30,.7);border-bottom:1px solid rgba(255,255,255,.06);z-index:40}
-
-    /* NAV */
-    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .logo{display:flex;gap:10px;align-items:center}
-    .logo img{height:28px;width:auto;display:block}
-    .badge{font-size:12px;padding:4px 8px;border-radius:999px;background:#152045;border:1px solid #2a386d;color:#cfe0ff;margin-left:6px}
-    .nav-links{display:flex;gap:16px;align-items:center;list-style:none;margin:0;padding:0}
-    .menu-toggle{display:none;background:transparent;border:0;font-size:24px;color:#e9eef7;padding:8px;cursor:pointer}
-
-    /* HERO */
-    .hero{padding:44px 0 24px;border-bottom:1px solid rgba(255,255,255,.06)}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center}
-    .headline{font-size:clamp(28px,5vw,46px);line-height:1.05;margin:0}
-    .hero p{color:var(--sub);font-size:clamp(14px,2.6vw,18px)}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
-
-    /* GRID / CARDS */
-    .grid{display:grid;gap:20px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:linear-gradient(180deg,#0f1734,#0c142b);border:1px solid #1f2a54;border-radius:18px;padding:20px}
-    .service-card{cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
-    .service-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
-    h2{font-size:clamp(22px,4vw,32px);margin:0 0 14px}
-    .muted{color:var(--sub)}
-    .list{display:grid;gap:8px}
-    .list li{display:flex;gap:10px;align-items:flex-start}
-    .dot{width:8px;height:8px;border-radius:50%;margin-top:8px;background:var(--pri);box-shadow:0 0 0 3px rgba(94,224,170,.16)}
-
-    /* KPIs */
-    .kpis{margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .kpi{background:linear-gradient(180deg,#0f1734,#0c142b);border:1px solid #1f2a54;border-radius:14px;padding:14px;text-align:center}
-
-    /* FORM */
-    .form{max-width:1120px;margin:0 auto;padding:10px 20px 40px}
-    label{display:block;margin:12px 0 6px}
-    input,select,textarea{width:100%;padding:12px;border:1px solid #243468;background:#0b122b;color:#e9eef7;border-radius:12px}
-    button{padding:12px 18px;border-radius:12px;border:0;background:linear-gradient(90deg,var(--pri),#7cf5c3);color:#041a12;font-weight:700;cursor:pointer}
-
-    /* Responsive */
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns:1fr}
-      .kpis{grid-template-columns:repeat(2,1fr)}
-      .cards{grid-template-columns:1fr}
-    }
-    @media (max-width: 800px){
-      .menu-toggle{display:block}
-      .nav-links{position:fixed;inset:64px 0 auto 0;background:#0b1020;border-top:1px solid rgba(255,255,255,.06);display:none;flex-direction:column;gap:0}
-      .nav-links li{width:100%;border-bottom:1px solid rgba(255,255,255,.06)}
-      .nav-links a{display:block;padding:14px 20px}
-      .nav-open .nav-links{display:flex}
-    }
-  </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
+  <!-- ====== HEADER (garde ton header/nav existants si besoin) ====== -->
+  <header class="site-header">
     <div class="container">
-      <nav>
+      <nav class="site-nav">
         <div class="logo">
-          <img src="assets/spunaises-logo.png" alt="Spunaises — désinsectisation à Marseille" />
-          <strong>Spunaises</strong><span class="badge">Marseille</span>
+          <img src="assets/spunaises-logo.png" alt="Spunaises" />
+          <strong>Spunaises</strong>
         </div>
-
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-
         <ul class="nav-links">
           <li><a href="#services">Services</a></li>
           <li><a href="#process">Déroulé</a></li>
@@ -103,190 +35,185 @@
     </div>
   </header>
 
-  <!-- MAIN -->
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <h1 class="headline">Désinsectisation & dératisation à Marseille — dès 80€</h1>
-            <p>3 services complémentaires : <strong>Spunaises</strong> (Punaises de lit), <strong>Scafards</strong> (cafards) et <strong>Sratus</strong> (rats). Suivi à 15 jours, intervention discrète.</p>
-            <div class="cta">
-              <a href="#contact" class="btn btn-primary">Obtenir un devis</a>
-              <a href="tel:+33756848096" class="btn">Appeler : 07 56 84 80 96</a>
-            </div>
-          </div>
-          <figure>
-            <picture>
-              <source type="image/webp"
-                srcset="assets/photos/couple_pointing-1200.webp 1200w,
-                        assets/photos/couple_pointing-800.webp 800w,
-                        assets/photos/couple_pointing-480.webp 480w"
-                sizes="(max-width:900px) 100vw, 48vw" />
-              <img src="assets/photos/couple_pointing-800.jpg"
-                   alt="Technicien Spunaises — inspection"
-                   width="800" height="533"
-                   style="width:100%;height:auto;border-radius:12px;border:1px solid #1f2a54" />
-            </picture>
-          </figure>
-        </div>
-        <div class="kpis">
-          <div class="kpi"><h3>24–48h</h3><p>Délai d’intervention</p></div>
-          <div class="kpi"><h3>4,8★</h3><p>Avis (objectif)</p></div>
-          <div class="kpi"><h3>Discret</h3><p>Véhicule sans logo</p></div>
-          <div class="kpi"><h3>Suivi</h3><p>Contrôle J+15</p></div>
-        </div>
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Désinsectisation & dératisation à Marseille — dès 80€</h1>
+        <p>3 services complémentaires : <strong>Spunaises</strong> (punaises de lit), <strong>Scafards</strong> (cafards), <strong>Sratus</strong> (rats). Suivi à J+15, intervention discrète.</p>
+        <p class="cta">
+          <a href="#contact" class="btn btn-primary">Obtenir un devis</a>
+          <a href="tel:+33756848096" class="btn">Appeler : 07 56 84 80 96</a>
+        </p>
       </div>
-    </section>
+      <figure class="hero-media">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/photos/couple_pointing-1200.webp 1200w,
+                    assets/photos/couple_pointing-800.webp 800w,
+                    assets/photos/couple_pointing-480.webp 480w"
+            sizes="(max-width:900px) 100vw, 48vw" />
+          <img src="assets/photos/couple_pointing-800.jpg"
+               alt="Technicien Spunaises — inspection"
+               width="800" height="533" loading="eager" />
+        </picture>
+      </figure>
+    </div>
+  </section>
 
-    <!-- SERVICES -->
-    <section id="services">
-      <div class="container">
-        <h2>Nos services</h2>
-        <p class="muted">Interventions rapides, discrètes et adaptées à votre logement.</p>
-        <div class="cards">
-          <div class="card service-card" data-nuisible="punaises" tabindex="0" role="button" aria-label="Choisir Spunaises — punaises de lit">
-            <h3>Spunaises</h3>
-            <p class="muted">Punaises de lit</p>
-            <ul class="list">
-              <li><span class="dot"></span><span>Traitement ciblé des nids et zones de passage</span></li>
-              <li><span class="dot"></span><span>Conseils prévention & suivi</span></li>
-            </ul>
-          </div>
-          <div class="card service-card" data-nuisible="cafards" tabindex="0" role="button" aria-label="Choisir Scafards — cafards">
-            <h3>Scafards</h3>
-            <p class="muted">Lutte contre les cafards</p>
-            <ul class="list">
-              <li><span class="dot"></span><span>Gel appâts pro + monitoring</span></li>
-              <li><span class="dot"></span><span>Plan d’action 15 jours</span></li>
-            </ul>
-          </div>
-          <div class="card service-card" data-nuisible="rats_souris" tabindex="0" role="button" aria-label="Choisir Sratus — dératisation">
-            <h3>Sratus</h3>
-            <p class="muted">Dératisation</p>
-            <ul class="list">
-              <li><span class="dot"></span><span>Borniers sécurisés & postes d’appâtage</span></li>
-              <li><span class="dot"></span><span>Bouchage points d’entrée (conseils)</span></li>
-            </ul>
-          </div>
-        </div>
+  <!-- ====== KPIs (facultatif, garde ton style) ====== -->
+  <section class="kpis">
+    <div class="container kpis-grid">
+      <div class="card kpi"><h3>24–48h</h3><p>Délai d’intervention</p></div>
+      <div class="card kpi"><h3>4,8★</h3><p>Avis (objectif)</p></div>
+      <div class="card kpi"><h3>Discret</h3><p>Véhicule sans logo</p></div>
+      <div class="card kpi"><h3>Suivi</h3><p>Contrôle J+15</p></div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nos services</h2>
+      <p class="muted">Interventions rapides, discrètes et adaptées à votre logement.</p>
+
+      <div class="cards services-cards">
+        <article class="card service-card" data-nuisible="punaises" tabindex="0" role="button" aria-label="Spunaises — punaises de lit">
+          <h3>Spunaises</h3>
+          <p class="muted">Punaises de lit</p>
+          <ul class="list">
+            <li>Traitement ciblé des nids et zones de passage</li>
+            <li>Conseils de prévention & suivi</li>
+          </ul>
+        </article>
+
+        <article class="card service-card" data-nuisible="cafards" tabindex="0" role="button" aria-label="Scafards — cafards">
+          <h3>Scafards</h3>
+          <p class="muted">Lutte contre les cafards</p>
+          <ul class="list">
+            <li>Gel/appâts professionnels + monitoring</li>
+            <li>Plan d’action à 15 jours</li>
+          </ul>
+        </article>
+
+        <article class="card service-card" data-nuisible="rats_souris" tabindex="0" role="button" aria-label="Sratus — dératisation">
+          <h3>Sratus</h3>
+          <p class="muted">Dératisation</p>
+          <ul class="list">
+            <li>Postes d’appâtage sécurisés</li>
+            <li>Bouchage des points d’entrée (conseils)</li>
+          </ul>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROCESS -->
-    <section id="process">
-      <div class="container grid two">
-        <div>
-          <h2>Comment ça se passe ?</h2>
-          <ol class="list" style="counter-reset:step">
-            <li><span class="dot"></span><span><strong>Contact</strong> par téléphone ou via le formulaire → devis immédiat TTC</span></li>
-            <li><span class="dot"></span><span><strong>Pré-traitement</strong> : check-list linge & rangement</span></li>
-            <li><span class="dot"></span><span><strong>Intervention</strong> discrète 60–120 min</span></li>
-            <li><span class="dot"></span><span><strong>Suivi</strong> : message J+3 & contrôle J+15</span></li>
-          </ol>
-        </div>
-        <div class="card">
-          <h3>Zones desservies</h3>
-          <p class="muted">Marseille, Aix-en-Provence, Cassis, Aubagne, La Ciotat.</p>
-          <div class="list">
-            <span class="dot"></span><span>Créneaux 8h–20h, intervention 24–48h</span>
-          </div>
-        </div>
+  <!-- ====== PROCESS ====== -->
+  <section id="process" class="process">
+    <div class="container process-grid">
+      <div>
+        <h2>Comment ça se passe ?</h2>
+        <ol class="list">
+          <li><strong>Contact</strong> par téléphone ou formulaire → devis immédiat TTC</li>
+          <li><strong>Pré-traitement</strong> : check-list linge & rangement</li>
+          <li><strong>Intervention</strong> discrète 60–120 min</li>
+          <li><strong>Suivi</strong> : message J+3 & contrôle J+15</li>
+        </ol>
       </div>
-    </section>
+      <aside class="card">
+        <h3>Zones desservies</h3>
+        <p class="muted">Marseille, Aix-en-Provence, Cassis, Aubagne, La Ciotat.</p>
+        <p class="muted">Créneaux 8h–20h, intervention 24–48h.</p>
+      </aside>
+    </div>
+  </section>
 
-    <!-- FAQ -->
-    <section id="faq">
-      <div class="container">
-        <h2>Questions fréquentes</h2>
-        <div class="card">
-          <details><summary>Il faut sortir du logement pour combien de temps ?</summary><p class="muted">En général, prévoir <strong>4 h d’absence</strong> (notamment pour les punaises de lit). Aérez 20–30 min avant ré-entrée.</p></details>
-          <details><summary>L’intervention est-elle discrète ?</summary><p class="muted">Oui, tenue civile et véhicule sans logo.</p></details>
-          <details><summary>Et si ça revient ?</summary><p class="muted">Contrôle J+15 et retraitement ciblé si nécessaire.</p></details>
-        </div>
+  <!-- ====== FAQ ====== -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>Questions fréquentes</h2>
+      <div class="card">
+        <details><summary>Il faut sortir du logement pour combien de temps ?</summary><p>En général, prévoir <strong>4 h d’absence</strong> (notamment pour les punaises de lit). Aérez 20–30 min avant ré-entrée.</p></details>
+        <details><summary>L’intervention est-elle discrète ?</summary><p>Oui, tenue civile et véhicule sans logo.</p></details>
+        <details><summary>Et si ça revient ?</summary><p>Contrôle J+15 et retraitement ciblé si nécessaire.</p></details>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section class="form" id="contact">
-      <div class="container">
-        <h2>Obtenir un devis immédiat</h2>
+  <!-- ====== CONTACT (FORMULAIRE POST FormSubmit) ====== -->
+  <section class="form" id="contact">
+    <div class="container">
+      <h2>Obtenir un devis immédiat</h2>
 
-        <!-- 🟢 FORMULAIRE CORRECT (POST vers FormSubmit) -->
-        <form class="card" action="https://formsubmit.co/contact@spunaises.fr" method="POST" accept-charset="UTF-8">
-          <label>Nom
-            <input name="name" required placeholder="Votre nom" />
-          </label>
-          <label>Email
-            <input type="email" name="email" required placeholder="email@domaine.fr" />
-          </label>
-          <label>Téléphone
-            <input name="phone" placeholder="07…" />
-          </label>
-          <label>Type de nuisible concerné
-            <select name="nuisible" required>
-              <option value="" disabled selected>Choisir…</option>
-              <option value="punaises">Punaises de lit</option>
-              <option value="cafards">Cafards</option>
-              <option value="rats_souris">Rats et souris</option>
-              <option value="autres">Autres nuisibles</option>
-            </select>
-          </label>
-          <label>Adresse postale
-            <input name="address" required placeholder="Numéro, rue, code postal, ville" />
-          </label>
-          <label>Message
-            <textarea name="message" rows="5" placeholder="Précisions utiles (étage, accès, disponibilité)…"></textarea>
-          </label>
+      <!-- Remplacement minimal : on garde la classe "card" et ta mise en forme -->
+      <form class="card" action="https://formsubmit.co/contact@spunaises.fr" method="POST" accept-charset="UTF-8">
+        <label>Nom<br/>
+          <input name="name" required placeholder="Votre nom" />
+        </label><br/><br/>
 
-          <!-- Champs cachés FormSubmit -->
-          <input type="hidden" name="_next" value="merci.html" />
-          <input type="hidden" name="_subject" value="Nouveau devis — Spunaises" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_replyto" value="{{email}}" />
-          <input type="text"   name="_honey"  style="display:none" />
+        <label>Email<br/>
+          <input type="email" name="email" required placeholder="email@domaine.fr" />
+        </label><br/><br/>
 
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-    </section>
-  </main>
+        <label>Téléphone<br/>
+          <input name="phone" placeholder="07…" />
+        </label><br/><br/>
 
-  <!-- FOOTER -->
-  <footer style="padding:30px 0;border-top:1px solid rgba(255,255,255,.08);color:#a7b2c8">
-    <div class="container" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-      <span>© <span id="y"></span> Spunaises — Marseille</span>
-      <span>SIRET : 938 253 002 00019 • 10 rue des Petites Maries, 13001 Marseille •
-        <a href="tel:+33756848096">07 56 84 80 96</a> • <a href="mailto:contact@spunaises.fr">contact@spunaises.fr</a></span>
+        <label>Type de nuisible concerné<br/>
+          <select name="nuisible" required>
+            <option value="" disabled selected>Choisir…</option>
+            <option value="punaises">Punaises de lit</option>
+            <option value="cafards">Cafards</option>
+            <option value="rats_souris">Rats et souris</option>
+            <option value="autres">Autres nuisibles</option>
+          </select>
+        </label><br/><br/>
+
+        <label>Adresse postale<br/>
+          <input name="address" required placeholder="Numéro, rue, code postal, ville" />
+        </label><br/><br/>
+
+        <label>Message<br/>
+          <textarea name="message" rows="5" placeholder="Précisions utiles (étage, accès, disponibilité)…"></textarea>
+        </label><br/>
+
+        <!-- Champs cachés FormSubmit -->
+        <input type="hidden" name="_next" value="merci.html" />
+        <input type="hidden" name="_subject" value="Nouveau devis — Spunaises" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_replyto" value="{{email}}" />
+        <input type="hidden" name="_autoresponse" value="Bonjour {{name}}, Nous accusons réception de votre demande. Un technicien vous contactera sous 24 h pour confirmer votre devis et proposer un créneau d’intervention. Merci de votre confiance — L’équipe Spunaises." />
+        <input type="text"   name="_honey" style="display:none" />
+
+        <button class="btn btn-primary" type="submit">Envoyer</button>
+        <p class="note">En cliquant “Envoyer”, vous acceptez d’être recontacté par Spunaises.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Spunaises — Marseille • SIRET : 938 253 002 00019 • 10 rue des Petites Maries, 13001 Marseille •
+        <a href="tel:+33756848096">07 56 84 80 96</a> • <a href="mailto:contact@spunaises.fr">contact@spunaises.fr</a></p>
     </div>
   </footer>
 
-  <!-- JS -->
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <!-- JS minimal (facultatif) -->
   <script>
-    // Burger menu
-    const btn = document.querySelector('.menu-toggle');
-    btn?.addEventListener('click', () => {
-      const open = document.body.classList.toggle('nav-open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-
-    // Cartes services -> focus form + sélection auto
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Service cards -> préremplir le select + scroll
     (function(){
       const cards = document.querySelectorAll('.service-card');
       const formSection = document.querySelector('#contact');
       const select = document.querySelector('select[name="nuisible"]');
-      function go(nuisible){
-        if(select) select.value = nuisible;
+      function go(val){
+        if(select) select.value = val;
         if(formSection) formSection.scrollIntoView({behavior:'smooth', block:'start'});
-        if(select) setTimeout(()=>select.focus(), 400);
       }
-      cards.forEach(card=>{
-        card.addEventListener('click', ()=> go(card.dataset.nuisible));
-        card.addEventListener('keydown', (e)=>{
-          if(e.key==='Enter' || e.key===' '){ e.preventDefault(); go(card.dataset.nuisible); }
-        });
+      cards.forEach(c=>{
+        c.addEventListener('click', ()=> go(c.dataset.nuisible));
+        c.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(c.dataset.nuisible); }});
       });
     })();
   </script>
