@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://exemple-spunaises.fr/sitemap.xml
