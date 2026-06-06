@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Spunaises — Désinsectisation & Dératisation Marseille | Dès 80€</title>
+  <meta name="description" content="Spunaises — Punaises de lit, cafards et dératisation à Marseille. Intervention rapide et discrète, devis immédiat, suivi J+15. À partir de 80€ TTC.">
+  <link rel="canonical" href="https://spunaises.fr/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Spunaises",
+    "image": "https://spunaises.fr/assets/spunaises-logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10 rue des Petites Maries",
+      "postalCode": "13001",
+      "addressLocality": "Marseille",
+      "addressCountry": "FR"
+    },
+    "telephone": "+33756848096",
+    "email": "contact@spunaises.fr",
+    "url": "https://spunaises.fr",
+    "priceRange": "€€",
+    "openingHours": ["Mo-Su 08:00-20:00"],
+    "areaServed": {
+      "@type": "City",
+      "name": "Marseille"
+    }
+  }
+  </script>
+
+<style>
+/* ===========================
+   TOKENS & RESET
+=========================== */
+:root {
+  --night: #080c14;
+  --deep: #0d1422;
+  --panel: #111827;
+  --border: rgba(255,255,255,.07);
+  --border2: rgba(255,255,255,.12);
+  --teal: #00d4a0;
+  --teal2: #00b488;
+  --amber: #f59e0b;
+  --red: #ef4444;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --faint: #64748b;
+  --r: 16px;
+  --r2: 24px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--night);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+::selection { background: var(--teal); color: #000; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+h1, h2, h3, h4, .brand-name, .nav-cta {
+  font-family: 'Inter', sans-serif;
+}
+/* Style ultra-pro et impactant pour le titre principal */
+.hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+.display {
+  font-size: clamp(38px, 6.5vw, 80px);
+}
+.display em {
+  font-style: normal;
+  color: var(--teal);
+  position: relative;
+}
+.display em::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0; right: 0;
+  height: 3px;
+  background: var(--teal);
+  border-radius: 2px;
+  opacity: .5;
+}
+h2.section-title {
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.lead {
+  font-size: clamp(15px, 2vw, 18px);
+  color: var(--muted);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 96px 0; }
+.section-sm { padding: 64px 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+@media (max-width: 900px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ===========================
+   BACKGROUND EFFECTS
+=========================== */
+.bg-glow {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  overflow: hidden;
+}
+.bg-glow::before {
+  content: '';
+  position: absolute;
+  top: -30%; left: -20%;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(0,212,160,.06) 0%, transparent 70%);
+  animation: driftA 18s ease-in-out infinite alternate;
+}
+.bg-glow::after {
+  content: '';
+  position: absolute;
+  bottom: -20%; right: -10%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(245,158,11,.04) 0%, transparent 70%);
+  animation: driftB 22s ease-in-out infinite alternate;
+}
+@keyframes driftA { from { transform: translate(0,0) scale(1); } to { transform: translate(60px,-40px) scale(1.15); } }
+@keyframes driftB { from { transform: translate(0,0) scale(1); } to { transform: translate(-50px,30px) scale(1.2); } }
+
+/* Grid noise texture overlay */
+.noise {
+  position: fixed; inset: 0; pointer-events: none; z-index: 1;
+  opacity: .025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
+
+/* ===========================
+   NAV
+=========================== */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(8,12,20,.85);
+  backdrop-filter: blur(20px) saturate(160%);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: 1180px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-icon {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--teal), var(--teal2));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+.brand-name {
+  font-size: 20px; font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.brand-tagline {
+  font-size: 11px; color: var(--muted);
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  margin-left: 4px;
+}
+.nav-links { display: flex; align-items: center; gap: 8px; }
+.nav-link {
+  font-size: 13px; font-weight: 500;
+  color: var(--muted);
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: color .15s, background .15s;
+}
+.nav-link:hover { color: var(--text); background: rgba(255,255,255,.05); }
+.nav-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--teal);
+  color: #011a12;
+  font-size: 13px; font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 12px;
+  transition: background .15s, transform .1s;
+}
+.nav-cta:hover { background: #00e8af; transform: translateY(-1px); }
+@media (max-width: 640px) {
+  .nav-links .nav-link { display: none; }
+  .brand-tagline { display: none; }
+}
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+  position: relative; z-index: 2;
+  padding: 80px 0 64px;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(0,212,160,.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 64px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--teal);
+  background: rgba(0,212,160,.08);
+  border: 1px solid rgba(0,212,160,.2);
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-bottom: 24px;
+}
+.hero-eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); display: block; }
+.hero-title { margin-bottom: 24px; }
+.hero-sub {
+  font-size: 17px; color: var(--muted); line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+
+/* Stats strip */
+.hero-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+.stat-item { }
+.stat-val {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px; font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.03em;
+}
+.stat-val span { color: var(--teal); }
+.stat-label { font-size: 12px; color: var(--faint); margin-top: 2px; }
+
+/* Trust badges */
+.hero-trust {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-top: 20px;
+}
+.trust-badge {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--muted);
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+.trust-badge svg { opacity: .7; }
+
+/* Hero visual / card */
+.hero-visual {
+  position: relative;
+}
+.hero-card {
+  background: var(--panel);
+  border: 1px solid var(--border2);
+  border-radius: var(--r2);
+  overflow: hidden;
+  position: relative;
+}
+.hero-card-header {
+  background: linear-gradient(135deg, #0d1f1a 0%, #091a14 100%);
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.hero-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; font-weight: 700;
+  color: var(--teal);
+}
+.live-badge {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: #4ade80; font-weight: 600;
+}
+.live-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 0 rgba(74,222,128,.4);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(74,222,128,.4); }
+  50% { box-shadow: 0 0 0 7px rgba(74,222,128,0); }
+}
+.hero-card-body { padding: 24px; }
+.mini-service {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  transition: border-color .2s, background .2s;
+  cursor: pointer;
+}
+.mini-service:hover { border-color: var(--teal); background: rgba(0,212,160,.04); }
+.mini-service:last-child { margin-bottom: 0; }
+.mini-icon {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.mini-icon.teal { background: rgba(0,212,160,.12); }
+.mini-icon.amber { background: rgba(245,158,11,.12); }
+.mini-icon.red { background: rgba(239,68,68,.12); }
+.mini-service-info { flex: 1; }
+.mini-service-name { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; }
+.mini-service-desc { font-size: 12px; color: var(--faint); margin-top: 2px; }
+.mini-service-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; font-weight: 800;
+  color: var(--teal);
+}
+.availability-row {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(74,222,128,.06);
+  border: 1px solid rgba(74,222,128,.15);
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: #4ade80; font-weight: 500;
+}
+.availability-row::before { content: '✓'; font-weight: 700; }
+
+/* Floating card detail */
+.float-chip {
+  position: absolute;
+  background: var(--panel);
+  border: 1px solid var(--border2);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 12px; font-weight: 600;
+  display: flex; align-items: center; gap: 8px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+  animation: floatChip 3s ease-in-out infinite alternate;
+}
+.float-chip.tl { top: -20px; right: -10px; }
+.float-chip.br { bottom: -16px; left: -16px; }
+@keyframes floatChip {
+  from { transform: translateY(0); }
+  to { transform: translateY(-8px); }
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  border-radius: 14px;
+  transition: all .15s;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+.btn-xl { font-size: 16px; padding: 16px 28px; }
+.btn-lg { font-size: 15px; padding: 14px 24px; }
+.btn-md { font-size: 14px; padding: 11px 20px; }
+.btn-sm { font-size: 13px; padding: 9px 16px; }
+.btn-primary {
+  background: var(--teal);
+  color: #011a12;
+  box-shadow: 0 8px 24px rgba(0,212,160,.2);
+}
+.btn-primary:hover { background: #00e8af; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,212,160,.3); }
+.btn-secondary {
+  background: rgba(255,255,255,.07);
+  color: var(--text);
+  border: 1px solid var(--border2);
+}
+.btn-secondary:hover { background: rgba(255,255,255,.11); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  color: var(--teal);
+  border: 1.5px solid var(--teal);
+}
+.btn-outline:hover { background: rgba(0,212,160,.06); transform: translateY(-1px); }
+.btn-call {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a0f00;
+  box-shadow: 0 8px 24px rgba(245,158,11,.25);
+}
+.btn-call:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(245,158,11,.35); }
+
+/* ===========================
+   URGENCY BAR
+=========================== */
+.urgency-bar {
+  position: relative; z-index: 2;
+  background: linear-gradient(90deg, rgba(245,158,11,.08), rgba(239,68,68,.08));
+  border-top: 1px solid rgba(245,158,11,.15);
+  border-bottom: 1px solid rgba(245,158,11,.15);
+  padding: 12px 0;
+}
+.urgency-inner {
+  display: flex; align-items: center; justify-content: center;
+  gap: 24px; flex-wrap: wrap;
+}
+.urgency-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 500;
+  color: #fcd34d;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+.services-section { position: relative; z-index: 2; }
+.service-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 32px;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 0 0 2px 2px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.service-card.punaises::before { background: linear-gradient(90deg, var(--teal), #00b488); }
+.service-card.cafards::before { background: linear-gradient(90deg, var(--amber), #d97706); }
+.service-card.deratisation::before { background: linear-gradient(90deg, var(--red), #dc2626); }
+.service-card:hover { border-color: rgba(255,255,255,.18); transform: translateY(-4px); box-shadow: 0 24px 48px rgba(0,0,0,.3); }
+.service-card:hover::before { opacity: 1; }
+.service-icon {
+  width: 56px; height: 56px;
+  border-radius: 18px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.si-teal { background: rgba(0,212,160,.1); border: 1px solid rgba(0,212,160,.2); }
+.si-amber { background: rgba(245,158,11,.1); border: 1px solid rgba(245,158,11,.2); }
+.si-red { background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.2); }
+.service-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px; font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.service-subtitle { font-size: 13px; color: var(--faint); margin-bottom: 16px; font-weight: 500; }
+.service-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 24px; }
+.service-list {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 8px;
+  margin-bottom: 28px;
+}
+.service-list li {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: var(--muted);
+}
+.service-list li::before {
+  content: '';
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: rgba(0,212,160,.1);
+  border: 1px solid rgba(0,212,160,.3);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1.5' stroke='%2300d4a0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-price-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.service-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px; font-weight: 800;
+  color: var(--text);
+}
+.service-price small { font-size: 13px; font-weight: 400; color: var(--faint); display: block; }
+
+/* ===========================
+   PROCESS
+=========================== */
+.process-section { position: relative; z-index: 2; }
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+@media (max-width: 900px) {
+  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .step-connector { display: none; }
+}
+@media (max-width: 480px) {
+  .process-steps { grid-template-columns: 1fr; }
+}
+.step {
+  position: relative;
+  text-align: center;
+  padding: 32px 24px;
+}
+.step-connector {
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  right: -50%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--teal), transparent);
+  opacity: .3;
+  z-index: 0;
+}
+.step:last-child .step-connector { display: none; }
+.step-num {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--panel);
+  border: 2px solid var(--teal);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px; font-weight: 800;
+  color: var(--teal);
+  margin: 0 auto 20px;
+  position: relative; z-index: 1;
+  box-shadow: 0 0 0 6px rgba(0,212,160,.06);
+  transition: box-shadow .3s;
+}
+.step:hover .step-num { box-shadow: 0 0 0 10px rgba(0,212,160,.1); }
+.step-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; font-weight: 700;
+  margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+/* ===========================
+   ZONES
+=========================== */
+.zones-section { position: relative; z-index: 2; }
+.zones-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+@media (max-width: 900px) { .zones-grid { grid-template-columns: 1fr; } }
+.zone-pills {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 24px;
+}
+.zone-pill {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  font-size: 13px; font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all .15s;
+}
+.zone-pill:hover, .zone-pill.active {
+  background: rgba(0,212,160,.08);
+  border-color: rgba(0,212,160,.3);
+  color: var(--teal);
+}
+
+/* ===========================
+   REVIEWS
+=========================== */
+.reviews-section { position: relative; z-index: 2; }
+.reviews-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 40px; flex-wrap: wrap; gap: 16px;
+}
+.rating-display {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 20px 24px;
+}
+.rating-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px; font-weight: 800;
+  line-height: 1;
+  color: var(--amber);
+}
+.stars { display: flex; gap: 3px; margin-bottom: 4px; }
+.star { color: var(--amber); font-size: 16px; }
+.rating-count { font-size: 12px; color: var(--faint); }
+.review-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 24px;
+  transition: border-color .2s, transform .2s;
+}
+.review-card:hover { border-color: rgba(255,255,255,.14); transform: translateY(-3px); }
+.review-header {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 16px;
+}
+.review-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; font-weight: 800;
+  flex-shrink: 0;
+}
+.review-name { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; }
+.review-location { font-size: 12px; color: var(--faint); }
+.review-stars { display: flex; gap: 2px; }
+.review-text { font-size: 14px; color: var(--muted); line-height: 1.65; }
+.review-service {
+  margin-top: 14px; padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--faint);
+  text-transform: uppercase; letter-spacing: .08em; font-weight: 600;
+}
+
+/* ===========================
+   FAQ
+=========================== */
+.faq-section { position: relative; z-index: 2; }
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 64px;
+  align-items: start;
+}
+@media (max-width: 900px) { .faq-grid { grid-template-columns: 1fr; } }
+.faq-list { display: flex; flex-direction: column; gap: 8px; }
+details.faq-item {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: border-color .2s;
+}
+details.faq-item[open] { border-color: rgba(0,212,160,.25); }
+details.faq-item summary {
+  padding: 18px 20px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; font-weight: 700;
+  list-style: none;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px;
+}
+details.faq-item summary::-webkit-details-marker { display: none; }
+details.faq-item summary::after {
+  content: '+';
+  color: var(--teal);
+  font-size: 20px; font-weight: 400;
+  flex-shrink: 0;
+  transition: transform .2s;
+}
+details.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  padding: 0 20px 18px;
+  font-size: 14px; color: var(--muted); line-height: 1.7;
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+.contact-section {
+  position: relative; z-index: 2;
+  padding: 96px 0;
+}
+.contact-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,212,160,.02) 50%, transparent 100%);
+  pointer-events: none;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-info-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(0,212,160,.08);
+  border: 1px solid rgba(0,212,160,.2);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px; font-weight: 600;
+  color: var(--teal); text-transform: uppercase; letter-spacing: .08em;
+  margin-bottom: 20px;
+}
+.contact-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800; letter-spacing: -0.03em; line-height: 1.1;
+  margin-bottom: 20px;
+}
+.contact-subtitle { font-size: 16px; color: var(--muted); font-weight: 300; line-height: 1.7; margin-bottom: 40px; }
+.contact-promises {
+  display: flex; flex-direction: column; gap: 14px;
+  margin-bottom: 40px;
+}
+.promise-item {
+  display: flex; align-items: center; gap: 14px;
+  font-size: 14px; color: var(--muted);
+}
+.promise-icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: rgba(0,212,160,.08);
+  border: 1px solid rgba(0,212,160,.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.contact-direct {
+  display: flex; flex-direction: column; gap: 12px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.contact-direct-label { font-size: 12px; color: var(--faint); text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+.contact-direct-links { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* Form styles */
+.form-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 36px;
+  position: relative;
+}
+.form-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 24px; right: 24px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--teal), transparent);
+  border-radius: 0 0 2px 2px;
+}
+.form-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px; font-weight: 800;
+  margin-bottom: 24px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.field-label {
+  font-size: 12px; font-weight: 600;
+  color: var(--muted); text-transform: uppercase; letter-spacing: .07em;
+}
+.field-input, .field-select, .field-textarea {
+  background: rgba(255,255,255,.04);
+  border: 1.5px solid var(--border2);
+  border-radius: 12px;
+  padding: 13px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; color: var(--text);
+  transition: border-color .15s, background .15s;
+  width: 100%;
+  appearance: none;
+  outline: none;
+}
+.field-input::placeholder, .field-textarea::placeholder { color: var(--faint); }
+.field-input:focus, .field-select:focus, .field-textarea:focus {
+  border-color: var(--teal);
+  background: rgba(0,212,160,.04);
+}
+.field-select {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.field-select option { background: var(--panel); color: var(--text); }
+.field-textarea { resize: vertical; min-height: 100px; }
+.form-submit-area { margin-top: 8px; }
+.form-submit-area .btn { width: 100%; justify-content: center; }
+.form-note {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 11px; color: var(--faint);
+}
+.honeypot { display: none; }
+
+/* Urgency timer */
+.slot-counter {
+  display: flex; align-items: center; gap: 10px;
+  background: rgba(239,68,68,.06);
+  border: 1px solid rgba(239,68,68,.15);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  font-size: 13px; color: #fca5a5; font-weight: 500;
+}
+.slot-counter::before { content: '⚡'; }
+
+/* ===========================
+   AIRBNB SECTION
+=========================== */
+.airbnb-section {
+  position: relative; z-index: 2;
+  background: linear-gradient(135deg, #0d1a26 0%, #0a1520 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 80px 0;
+}
+.airbnb-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+@media (max-width: 900px) { .airbnb-inner { grid-template-columns: 1fr; } }
+.airbnb-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,90,95,.08);
+  border: 1px solid rgba(255,90,95,.2);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px; font-weight: 600;
+  color: #ff5a5f;
+  text-transform: uppercase; letter-spacing: .08em;
+  margin-bottom: 16px;
+}
+.airbnb-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 28px;
+}
+@media (max-width: 480px) { .airbnb-features { grid-template-columns: 1fr; } }
+.airbnb-feat {
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 14px 16px;
+}
+.airbnb-feat-title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.airbnb-feat-desc { font-size: 12px; color: var(--faint); }
+.airbnb-pricing {
+  background: var(--panel);
+  border: 1px solid var(--border2);
+  border-radius: var(--r2);
+  overflow: hidden;
+}
+.airbnb-pricing-header {
+  background: linear-gradient(135deg, rgba(255,90,95,.08), rgba(255,90,95,.03));
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 700;
+  color: #ff5a5f;
+}
+.pricing-rows { padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+.pricing-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  transition: background .15s;
+}
+.pricing-row:hover { background: rgba(255,255,255,.03); }
+.pricing-row-name { color: var(--muted); }
+.pricing-row-price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800; color: var(--text);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  position: relative; z-index: 2;
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  padding: 48px 0 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+@media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
+.footer-brand-desc {
+  font-size: 13px; color: var(--faint); line-height: 1.7;
+  margin: 12px 0 20px;
+  max-width: 300px;
+}
+.footer-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .1em;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-link { font-size: 14px; color: var(--faint); transition: color .15s; }
+.footer-link:hover { color: var(--teal); }
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+  font-size: 12px; color: var(--faint);
+}
+.siret { font-family: monospace; font-size: 11px; }
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: .1s; }
+.reveal-delay-2 { transition-delay: .2s; }
+.reveal-delay-3 { transition-delay: .3s; }
+
+/* ===========================
+   UTILS
+=========================== */
+.text-teal { color: var(--teal); }
+.text-amber { color: var(--amber); }
+.text-muted { color: var(--muted); }
+.mt-4 { margin-top: 16px; }
+.mt-8 { margin-top: 32px; }
+.mt-12 { margin-top: 48px; }
+.mb-4 { margin-bottom: 16px; }
+.mb-6 { margin-bottom: 24px; }
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border2) 30%, var(--border2) 70%, transparent);
+  margin: 0;
+}
+.center { text-align: center; }
+.section-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+.section-label::before { content: ''; width: 20px; height: 1.5px; background: var(--teal); border-radius: 1px; }
+
+/* Mobile nav menu */
+.mobile-cta {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  z-index: 50;
+  background: rgba(8,12,20,.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border);
+  padding: 12px 16px;
+  gap: 10px;
+}
+@media (max-width: 640px) { .mobile-cta { display: flex; } }
+@media (max-width: 640px) { body { padding-bottom: 72px; } }
+</style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div class="noise"></div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-icon">🛡️</div>
+      <span class="brand-name">Spunaises</span>
+      <span class="brand-tagline">Marseille</span>
+    </div>
+    <div class="nav-links">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#processus" class="nav-link">Comment ça marche</a>
+      <a href="#avis" class="nav-link">Avis</a>
+      <a href="/airbnb-marseille" class="nav-link">Airbnb</a>
+      <a href="tel:+33756848096" class="btn btn-call btn-sm">📞 07 56 84 80 96</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Devis gratuit →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="urgency-bar">
+  <div class="urgency-inner">
+    <div class="urgency-item">⚡ Intervention sous 24–48h</div>
+    <div class="urgency-item">🔒 Véhicule sans logo, tenue civile</div>
+    <div class="urgency-item">✅ Devis gratuit & immédiat</div>
+    <div class="urgency-item">📋 Suivi J+15 inclus</div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">Spécialiste à Marseille depuis 2023</div>
+        <h1 class="display hero-title">
+          Éliminez les<br/>
+          <em>nuisibles</em><br/>
+          définitivement.
+        </h1>
+        <p class="hero-sub">
+          Punaises de lit, cafards, rats & souris. Intervention discrète, protocole pro, suivi à J+15. Vos voisins ne sauront rien.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-xl">Obtenir un devis gratuit →</a>
+          <a href="tel:+33756848096" class="btn btn-call btn-xl">📞 Appeler maintenant</a>
+        </div>
+        <div class="hero-trust mt-4">
+          <div class="trust-badge">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#00d4a0" stroke-width="2" fill="rgba(0,212,160,.2)"/></svg>
+            4,8★ Google
+          </div>
+          <div class="trust-badge">🏷️ SIRET vérifié</div>
+          <div class="trust-badge">🕗 8h–20h, 7j/7</div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-val">24<span>–48h</span></div>
+            <div class="stat-label">Délai d'intervention</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-val">80<span>€</span></div>
+            <div class="stat-label">À partir de TTC</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-val">J<span>+15</span></div>
+            <div class="stat-label">Suivi inclus</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-1">
+        <div class="float-chip tl">
+          <span>🟢</span>
+          <span>Disponible aujourd'hui</span>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="hero-card-title">Nos interventions</span>
+            <span class="live-badge"><span class="live-dot"></span> En service</span>
+          </div>
+          <div class="hero-card-body">
+            <a href="#contact" class="mini-service">
+              <div class="mini-icon teal">🛏️</div>
+              <div class="mini-service-info">
+                <div class="mini-service-name">Punaises de lit</div>
+                <div class="mini-service-desc">Protocole combiné • Suivi J+15</div>
+              </div>
+              <div class="mini-service-price">dès 80€</div>
+            </a>
+            <a href="#contact" class="mini-service">
+              <div class="mini-icon amber">🪳</div>
+              <div class="mini-service-info">
+                <div class="mini-service-name">Cafards & blattes</div>
+                <div class="mini-service-desc">Gel pro + pulvérisation ciblée</div>
+              </div>
+              <div class="mini-service-price">dès 80€</div>
+            </a>
+            <a href="#contact" class="mini-service">
+              <div class="mini-icon red">🐀</div>
+              <div class="mini-service-info">
+                <div class="mini-service-name">Dératisation</div>
+                <div class="mini-service-desc">Bornes sécurisées • Colmatage</div>
+              </div>
+              <div class="mini-service-price">dès 120€</div>
+            </a>
+            <div class="availability-row">
+              Créneaux disponibles dès aujourd'hui — devis en 5 min
+            </div>
+          </div>
+        </div>
+        <div class="float-chip br">
+          <span>⭐</span>
+          <span>4,8/5 sur Google</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section services-section" id="services">
+  <div class="wrap">
+    <div class="center mb-6 reveal">
+      <div class="section-label">Nos prestations</div>
+      <h2 class="section-title">Un problème, une solution.<br/><span class="text-teal">Efficacité garantie.</span></h2>
+      <p class="lead mt-4" style="max-width:520px;margin-left:auto;margin-right:auto">Chaque intervention est sur-mesure : diagnostic, protocole adapté, suivi et conseils de prévention inclus.</p>
+    </div>
+
+    <div class="grid-3 mt-8">
+      <div class="service-card punaises reveal reveal-delay-1" onclick="selectService('punaises')">
+        <div class="service-icon si-teal">🛏️</div>
+        <div class="service-name">Punaises de lit</div>
+        <div class="service-subtitle">Cimex lectularius</div>
+        <p class="service-desc">Infestation invisible le jour, dévastateur la nuit. Notre protocole combiné chimique + mécanique éradique nids et œufs en une intervention.</p>
+        <ul class="service-list">
+          <li>Inspection minutieuse du sommier, plinthes, prises</li>
+          <li>Pulvérisation + aspiration HEPA + vapeur sèche</li>
+          <li>Consignes préparation détaillées avant passage</li>
+          <li>Contrôle et retraitement ciblé à J+15</li>
+        </ul>
+        <div class="service-price-row">
+          <div class="service-price">dès 80€ <small>TTC selon surface</small></div>
+          <div class="btn btn-outline btn-sm">Réserver →</div>
+        </div>
+      </div>
+
+      <div class="service-card cafards reveal reveal-delay-2" onclick="selectService('cafards')">
+        <div class="service-icon si-amber">🪳</div>
+        <div class="service-name">Cafards & blattes</div>
+        <div class="service-subtitle">Blattodea</div>
+        <p class="service-desc">Résistants, nocturnes et prolifiques. Gel appât de dernière génération + insecticide ciblé pour briser le cycle de reproduction.</p>
+        <ul class="service-list">
+          <li>Diagnostic : traces, oothèques, chemins de passage</li>
+          <li>Gel alimentaire pro dans zones stratégiques</li>
+          <li>Pulvérisation ciblée plinthes et interstices</li>
+          <li>Relevé à J+15 avec ajustement si nécessaire</li>
+        </ul>
+        <div class="service-price-row">
+          <div class="service-price">dès 80€ <small>TTC selon surface</small></div>
+          <div class="btn btn-outline btn-sm">Réserver →</div>
+        </div>
+      </div>
+
+      <div class="service-card deratisation reveal reveal-delay-3" onclick="selectService('rats_souris')">
+        <div class="service-icon si-red">🐀</div>
+        <div class="service-name">Dératisation</div>
+        <div class="service-subtitle">Rongeurs</div>
+        <p class="service-desc">Rats, souris et campagnols. Identification des voies d'accès, pose d'appâts sécurisés et colmatage pour empêcher toute réinfestation.</p>
+        <ul class="service-list">
+          <li>Repérage traces, fientes et points d'entrée</li>
+          <li>Bornes d'appâtage sécurisées (enfants/animaux)</li>
+          <li>Piégeage mécanique selon contexte</li>
+          <li>Recommandations hygiène et étanchéité</li>
+        </ul>
+        <div class="service-price-row">
+          <div class="service-price">dès 120€ <small>TTC selon complexité</small></div>
+          <div class="btn btn-outline btn-sm">Réserver →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section-sm process-section" id="processus">
+  <div class="wrap">
+    <div class="center mb-8 reveal">
+      <div class="section-label">Comment ça marche</div>
+      <h2 class="section-title">Intervention en <span class="text-teal">4 étapes</span></h2>
+    </div>
+    <div class="process-steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-connector"></div>
+        <div class="step-num">1</div>
+        <div class="step-title">Devis immédiat</div>
+        <p class="step-desc">Appelez ou remplissez le formulaire. Tarif clair en 5 minutes, sans engagement.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-connector"></div>
+        <div class="step-num">2</div>
+        <div class="step-title">Préparation</div>
+        <p class="step-desc">Check-list personnalisée envoyée. Prêt en 30 min pour une efficacité maximale.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-connector"></div>
+        <div class="step-num">3</div>
+        <div class="step-title">Intervention</div>
+        <p class="step-desc">60–120 min. Tenue civile, véhicule discret. Protocole pro, sans nuisance olfactive.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-num">4</div>
+        <div class="step-title">Suivi J+15</div>
+        <p class="step-desc">Message J+3, contrôle à J+15. Retraitement ciblé offert si nécessaire.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="airbnb-section" id="airbnb">
+  <div class="wrap">
+    <div class="airbnb-inner">
+      <div class="reveal">
+        <div class="airbnb-badge">🏠 Airbnb & Conciergeries</div>
+        <h2 class="section-title">Protégez vos<br/><span style="color:#ff5a5f">5 étoiles</span> Airbnb.</h2>
+        <p class="lead mt-4 mb-6">Traitements curatifs discrets, abonnement prévention mensuel et <strong style="color:var(--text)">Attestation Label Clean-Nuisibles</strong> à afficher sur votre annonce.</p>
+        <div class="airbnb-features">
+          <div class="airbnb-feat">
+            <div class="airbnb-feat-title">🔄 Abonnement</div>
+            <div class="airbnb-feat-desc">Monitoring mensuel dès 19€/mois</div>
+          </div>
+          <div class="airbnb-feat">
+            <div class="airbnb-feat-title">📜 Attestation</div>
+            <div class="airbnb-feat-desc">Label Clean-Nuisibles dès 59€</div>
+          </div>
+          <div class="airbnb-feat">
+            <div class="airbnb-feat-title">🤫 Discret</div>
+            <div class="airbnb-feat-desc">Calé sur le turnover ménage</div>
+          </div>
+          <div class="airbnb-feat">
+            <div class="airbnb-feat-title">⚡ Rapide</div>
+            <div class="airbnb-feat-desc">Attestation remise &lt; 2h</div>
+          </div>
+        </div>
+        <a href="/airbnb-marseille" class="btn btn-secondary btn-lg mt-8">En savoir plus →</a>
+      </div>
+
+      <div class="airbnb-pricing reveal reveal-delay-2">
+        <div class="airbnb-pricing-header">Tarifs Airbnb & Conciergeries</div>
+        <div class="pricing-rows">
+          <div class="pricing-row">
+            <span class="pricing-row-name">Traitement cafards — T1</span>
+            <span class="pricing-row-price">100€</span>
+          </div>
+          <div class="pricing-row">
+            <span class="pricing-row-name">Traitement punaises — T1</span>
+            <span class="pricing-row-price">80€</span>
+          </div>
+          <div class="pricing-row">
+            <span class="pricing-row-name">Dératisation — Standard</span>
+            <span class="pricing-row-price">120€</span>
+          </div>
+          <div class="pricing-row" style="border-top:1px solid var(--border);margin-top:4px;padding-top:12px">
+            <span class="pricing-row-name">Abonnement prévention — T1</span>
+            <span class="pricing-row-price" style="color:var(--teal)">19€/mois</span>
+          </div>
+          <div class="pricing-row">
+            <span class="pricing-row-name">Attestation Clean-Nuisibles — T1</span>
+            <span class="pricing-row-price" style="color:var(--teal)">59€</span>
+          </div>
+        </div>
+        <div style="padding:16px">
+          <a href="#contact" class="btn btn-primary btn-md" style="width:100%;justify-content:center" onclick="selectService('punaises')">Demander un devis Airbnb →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section zones-section" id="zones">
+  <div class="wrap">
+    <div class="zones-grid">
+      <div class="reveal">
+        <div class="section-label">Zone d'intervention</div>
+        <h2 class="section-title mb-6">Marseille & <span class="text-teal">alentours</span></h2>
+        <p class="lead">Nous intervenons dans tous les arrondissements de Marseille et dans les communes voisines. Créneaux 8h–20h, 7j/7.</p>
+        <div class="zone-pills mt-8">
+          <span class="zone-pill active" onclick="activateZone(this,'Marseille 1er')">1er arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 2e')">2e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 3e')">3e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 4e')">4e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 5e')">5e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 6e')">6e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 7e')">7e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 8e')">8e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 9e')">9e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 10e')">10e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 11e')">11e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Marseille 12e')">12e arr.</span>
+          <span class="zone-pill" onclick="activateZone(this,'Aubagne')">Aubagne</span>
+          <span class="zone-pill" onclick="activateZone(this,'Cassis')">Cassis</span>
+          <span class="zone-pill" onclick="activateZone(this,'La Ciotat')">La Ciotat</span>
+          <span class="zone-pill" onclick="activateZone(this,'Aix-en-Provence')">Aix-en-Provence</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="card" style="background:var(--panel);border:1px solid var(--border2);border-radius:var(--r2);padding:32px">
+          <h3 style="font-family:Inter,sans-serif;font-size:18px;font-weight:800;margin-bottom:20px">Votre zone, votre créneau</h3>
+          <p style="font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:24px">Sélectionnez votre arrondissement ci-contre pour le pré-remplir dans le formulaire, ou appelez directement pour un créneau en urgence.</p>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)">
+              <span style="width:32px;height:32px;border-radius:50%;background:rgba(0,212,160,.1);display:flex;align-items:center;justify-content:center">🕗</span>
+              Créneaux du lundi au dimanche, 8h–20h
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)">
+              <span style="width:32px;height:32px;border-radius:50%;background:rgba(0,212,160,.1);display:flex;align-items:center;justify-content:center">⚡</span>
+              Urgences traitées en priorité
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)">
+              <span style="width:32px;height:32px;border-radius:50%;background:rgba(0,212,160,.1);display:flex;align-items:center;justify-content:center">🚗</span>
+              Déplacement inclus dans le devis
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-md mt-8" style="width:100%;justify-content:center">Réserver mon créneau →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section reviews-section" id="avis">
+  <div class="wrap">
+    <div class="reviews-header reveal">
+      <div>
+        <div class="section-label">Témoignages</div>
+        <h2 class="section-title">Ce que disent<br/><span class="text-teal">nos clients</span></h2>
+      </div>
+      <div class="rating-display">
+        <div class="rating-num">4,8</div>
+        <div>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <div class="rating-count">Note Google</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="review-card reveal reveal-delay-1">
+        <div class="review-header">
+          <div class="review-avatar" style="background:rgba(0,212,160,.15);color:var(--teal)">M</div>
+          <div>
+            <div class="review-name">Marie L.</div>
+            <div class="review-location">Marseille 6e</div>
+          </div>
+          <div class="review-stars" style="margin-left:auto">
+            <span class="star" style="font-size:13px">★★★★★</span>
+          </div>
+        </div>
+        <p class="review-text">« Intervention rapide et très rassurante. Plus de piqûres dès le lendemain. Le technicien a pris le temps d'expliquer chaque étape. »</p>
+        <div class="review-service">🛏️ Traitement punaises de lit</div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-2">
+        <div class="review-header">
+          <div class="review-avatar" style="background:rgba(245,158,11,.15);color:var(--amber)">Y</div>
+          <div>
+            <div class="review-name">Yacine B.</div>
+            <div class="review-location">Marseille 2e</div>
+          </div>
+          <div class="review-stars" style="margin-left:auto">
+            <span class="star" style="font-size:13px">★★★★★</span>
+          </div>
+        </div>
+        <p class="review-text">« Très discret, véhicule sans logo comme promis. Explications claires, tarif conforme au devis. Mes voisins n'ont rien su. »</p>
+        <div class="review-service">🪳 Traitement cafards</div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-3">
+        <div class="review-header">
+          <div class="review-avatar" style="background:rgba(239,68,68,.15);color:var(--red)">N</div>
+          <div>
+            <div class="review-name">Nina K.</div>
+            <div class="review-location">Marseille 8e</div>
+          </div>
+          <div class="review-stars" style="margin-left:auto">
+            <span class="star" style="font-size:13px">★★★★★</span>
+          </div>
+        </div>
+        <p class="review-text">« Contrôle à J+15 inclus, top pour avoir la certitude que tout est réglé. Je recommande sans hésiter pour un résultat durable. »</p>
+        <div class="review-service">🐀 Dératisation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section faq-section" id="faq">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="reveal">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Questions<br/><span class="text-teal">fréquentes</span></h2>
+        <p class="lead mt-4">Une question ? Retrouvez les réponses aux interrogations les plus courantes. Pour tout autre besoin, appelez-nous.</p>
+        <a href="tel:+33756848096" class="btn btn-call btn-lg mt-8">📞 07 56 84 80 96</a>
+      </div>
+      <div class="faq-list reveal reveal-delay-1">
+        <details class="faq-item" open>
+          <summary>Combien de temps dois-je quitter mon logement ?</summary>
+          <p class="faq-answer">En général, prévoyez <strong>4 heures</strong> d'absence — notamment pour les traitements contre les punaises de lit. Nous vous indiquons le délai précis lors du devis. Avant de ré-entrer : aérez 20–30 minutes.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Est-ce dangereux pour mes enfants et animaux ?</summary>
+          <p class="faq-answer">Nous utilisons des produits homologués avec un protocole sécurisé. Des consignes claires vous sont remises pour la ré-entrée, et les bornes d'appâtage dératisation sont sécurisées contre les enfants et animaux.</p>
+        </details>
+        <details class="faq-item">
+          <summary>L'intervention est-elle vraiment discrète ?</summary>
+          <p class="faq-answer">Oui. Tenue civile (pas de combinaison), véhicule sans logo ni publicité. Nous préservons votre intimité et celle de vos voisins.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Et si le problème revient après l'intervention ?</summary>
+          <p class="faq-answer">Le suivi à J+15 est inclus dans chaque prestation. Si une réinfestation est constatée lors du contrôle, un retraitement ciblé est effectué selon les conditions convenues.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Combien de passages sont nécessaires ?</summary>
+          <p class="faq-answer">Pour les cafards : souvent 2 passages à 10–15 jours d'intervalle pour briser le cycle. Pour les punaises et la dératisation, un passage suffisamment complet + le contrôle J+15.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Proposez-vous des devis gratuits ?</summary>
+          <p class="faq-answer">Oui, le devis est 100% gratuit et sans engagement. Par téléphone en 5 minutes ou via le formulaire, vous recevez un tarif TTC clair avant toute intervention.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-badge">✉ Devis gratuit</div>
+        <h2 class="contact-title">Obtenez votre<br/>devis <span class="text-teal">immédiat</span></h2>
+        <p class="contact-subtitle">Réponse en moins d'1 heure, de 8h à 20h. Intervention sous 24 à 48h.</p>
+
+        <div class="contact-promises">
+          <div class="promise-item">
+            <div class="promise-icon">⚡</div>
+            Devis TTC clair en 5 minutes
+          </div>
+          <div class="promise-item">
+            <div class="promise-icon">🔒</div>
+            Intervention discrète, véhicule sans logo
+          </div>
+          <div class="promise-item">
+            <div class="promise-icon">📋</div>
+            Suivi J+15 inclus dans chaque prestation
+          </div>
+          <div class="promise-item">
+            <div class="promise-icon">📍</div>
+            Marseille & alentours, 8h–20h, 7j/7
+          </div>
+        </div>
+
+        <div class="contact-direct">
+          <div class="contact-direct-label">Ou contactez-nous directement</div>
+          <div class="contact-direct-links">
+            <a href="tel:+33756848096" class="btn btn-call btn-lg">📞 07 56 84 80 96</a>
+            <a href="mailto:contact@spunaises.fr" class="btn btn-secondary btn-lg">✉ Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="form-card">
+          <div class="slot-counter">Créneaux disponibles aujourd'hui — répondons rapidement</div>
+          <div class="form-title">Demande de devis & réservation</div>
+
+          <form action="https://formsubmit.co/contact@spunaises.fr" method="POST" id="mainForm">
+            <div class="form-row">
+              <div class="field">
+                <label class="field-label" for="f-name">Prénom & Nom</label>
+                <input id="f-name" class="field-input" type="text" name="name" placeholder="Jean Dupont" required/>
+              </div>
+              <div class="field">
+                <label class="field-label" for="f-phone">Téléphone</label>
+                <input id="f-phone" class="field-input" type="tel" name="telephone" placeholder="06 12 34 56 78" required/>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="f-email">Email</label>
+              <input id="f-email" class="field-input" type="email" name="email" placeholder="votre@email.fr" required/>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label class="field-label" for="f-nuisible">Type de nuisible</label>
+                <select id="f-nuisible" class="field-select field-input" name="nuisible" required>
+                  <option value="" disabled selected>Choisir…</option>
+                  <option value="punaises">🛏️ Punaises de lit</option>
+                  <option value="cafards">🪳 Cafards / blattes</option>
+                  <option value="rats_souris">🐀 Rats / souris</option>
+                  <option value="autres">❓ Autres nuisibles</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field-label" for="f-urgence">Urgence</label>
+                <select id="f-urgence" class="field-select field-input" name="urgence">
+                  <option value="normal">Sous 48h (normal)</option>
+                  <option value="urgent">Sous 24h (urgent)</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="f-address">Adresse d'intervention</label>
+              <input id="f-address" class="field-input" type="text" name="address" placeholder="N° rue, code postal, Marseille…" required/>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="f-message">Précisions (optionnel)</label>
+              <textarea id="f-message" class="field-textarea field-input" name="message" placeholder="Taille du logement, niveau d'infestation estimé, disponibilités…"></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="Nouveau devis — Spunaises"/>
+            <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_next" value="https://spunaises.fr/merci.html"/>
+            <input type="text" name="_honey" class="honeypot"/>
+
+            <div class="form-submit-area">
+              <button type="submit" class="btn btn-primary btn-lg">
+                ✉ Envoyer ma demande
+              </button>
+            </div>
+            <p class="form-note">En envoyant, vous acceptez d'être recontacté par Spunaises. Aucun spam.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">
+          <div class="brand-icon">🛡️</div>
+          <span class="brand-name">Spunaises</span>
+        </div>
+        <p class="footer-brand-desc">Spécialiste désinsectisation et dératisation à Marseille. Intervention rapide, discrète et efficace. Suivi inclus, résultats garantis.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="tel:+33756848096" class="btn btn-call btn-sm">📞 Appeler</a>
+          <a href="#contact" class="btn btn-primary btn-sm">Devis gratuit</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Services</div>
+        <div class="footer-links">
+          <a href="/punaises-de-lit-marseille" class="footer-link">Punaises de lit Marseille</a>
+          <a href="/cafards-marseille" class="footer-link">Cafards & blattes Marseille</a>
+          <a href="/deratisation-marseille" class="footer-link">Dératisation Marseille</a>
+          <a href="/airbnb-marseille" class="footer-link">Offre Airbnb & Conciergeries</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <div class="footer-links">
+          <a href="tel:+33756848096" class="footer-link">07 56 84 80 96</a>
+          <a href="mailto:contact@spunaises.fr" class="footer-link">contact@spunaises.fr</a>
+          <span class="footer-link" style="cursor:default">10 rue des Petites Maries</span>
+          <span class="footer-link" style="cursor:default">13001 Marseille</span>
+          <span class="footer-link" style="cursor:default">8h–20h, 7j/7</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="y"></span> Spunaises — Désinsectisation Marseille</span>
+      <span class="siret">SIRET : 938 253 002 00019</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="tel:+33756848096" class="btn btn-call btn-md" style="flex:1;justify-content:center">📞 Appeler</a>
+  <a href="#contact" class="btn btn-primary btn-md" style="flex:1;justify-content:center">Devis gratuit →</a>
+</div>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in-view'); });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+
+// Select service from card click
+function selectService(val) {
+  const sel = document.getElementById('f-nuisible');
+  if(sel) sel.value = val;
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  setTimeout(() => sel && sel.focus(), 500);
+}
+
+// Zone pills
+function activateZone(el, zone) {
+  document.querySelectorAll('.zone-pill').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  const addr = document.getElementById('f-address');
+  if(addr) {
+    addr.value = zone;
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => addr.focus(), 500);
+  }
+}
+
+// Deep-link support
+const params = new URLSearchParams(location.search);
+const n = params.get('nuisible');
+if(n) { selectService(n); }
+const z = params.get('zone');
+if(z) {
+  const pill = [...document.querySelectorAll('.zone-pill')].find(p => p.textContent.trim() === z || p.getAttribute('onclick')?.includes(z));
+  if(pill) activateZone(pill, z);
+}
+</script>
+</body>
+</html>
